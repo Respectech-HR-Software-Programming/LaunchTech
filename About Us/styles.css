@@ -655,3 +655,180 @@ h2 {
     max-height: 350px;
     position: relative;
 }
+
+
+.mobile-view{
+    display: none;
+}
+.tablet-view{
+    display: none;
+}
+
+/* tablet view */
+@media only screen and (max-width: 912px) {
+    .desktop-view{
+        display: none;
+    }
+    .tablet-view{
+        display: block;
+    }
+    .mobile-view{
+        display: none;
+    }
+
+    .about-image{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .about-text {
+        width: 90%;
+        padding: 10px;
+        background-color: #f1ebeb;
+        margin: 20px;
+    }
+
+    .about-us-showcase {
+        /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3)70%, rgba(0, 0, 0, 0.3)90%), url(./images/about-us-img.jpg); */
+        width: 100%;
+        height: 370px;
+    }
+
+    .about-image img {
+        display: flex;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        width: 100%;
+        border-radius: 25px;
+        margin: 20px auto;
+    }
+
+    .mvv-div {
+        background-color: #f1ebeb;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        float:none;
+    }
+
+
+    .our-approach img {
+        object-fit: fill;
+        width: 100%;
+        float: left;
+        border-radius: 35px;
+        padding: 15px;
+    }
+
+    .our-approach p {
+        padding: 15px;
+        text-align: justify;
+        background-color: #f1ebeb;
+        width: 70%;
+        line-height: 2em;
+    }
+
+    .our-approach .approach-img2 {
+        object-fit: fill;
+        width: 100%;
+        float: left;
+        border-radius: 35px;
+        padding: 15px;
+    }
+
+    .our-mission-vision img {
+        width: 100% ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+    }
+
+    .our-partnership {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .desktop-view{
+        display: none;
+    }
+    .tablet-view{
+        display: none;
+    }
+    .mobile-view{
+        display: block;
+    }
+
+    .about-image{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 10px;
+        background-color: #f1ebeb;
+        margin: 20px;
+    }
+
+    .about-us-showcase {
+        /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3)70%, rgba(0, 0, 0, 0.3)90%), url(./images/about-us-img.jpg); */
+        width: 100%;
+        height: 370px;
+    }
+
+    .about-image img {
+        display: flex;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        width: 100%;
+        border-radius: 25px;
+        margin: 20px auto;
+    }
+
+    .mvv-div {
+        background-color: #f1ebeb;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        float:none;
+    }
+
+
+    .our-approach img {
+        object-fit: fill;
+        width: 100%;
+        float: left;
+        border-radius: 35px;
+        padding: 15px;
+    }
+
+    .our-approach p {
+        padding: 15px;
+        text-align: justify;
+        background-color: #f1ebeb;
+        width: 70%;
+        line-height: 2em;
+    }
+
+    .our-approach .approach-img2 {
+        object-fit: fill;
+        width: 100%;
+        float: left;
+        border-radius: 35px;
+        padding: 15px;
+    }
+
+    .our-mission-vision img {
+        width: 100% ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+    }
+
+    .our-partnership {
+        height: 350px;
+    }
+}
