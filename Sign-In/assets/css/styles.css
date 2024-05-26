@@ -6,17 +6,20 @@
     font-family: 'poppins', sans-serif;
 }
 
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("../images/Campus\ News.jpg");
+    /* background: url("../images/Campus\ News.jpg"); */
+    background: linear-gradient(-45deg, #e73c7e, #23a6d5);
     background-size: cover;
     background-position: center;
     opacity: 250%;
 }
 
+/* Ovaerlay - semi transparent white layer */
 body::before {
     content: "";
     position: absolute;
