@@ -42,7 +42,9 @@ body::before {
   z-index: -1;
 }
 
-/* Header styling */
+
+
+/*--------------- Header styling ------------------*/
 header.header {
   height: auto;
   width: 100%;
@@ -56,10 +58,11 @@ header.header {
 .navbar {
   border: 1px solid rgba(82, 77, 77, 0.11);
   position: absolute;
-  top: 65px;
-  right: 40px;
+  top: 5px;
+  right: 45px;
   height: auto;
   padding: 0 5px;
+  width: 170px;
 }
 .navbar div a {
   display: block;
@@ -69,25 +72,23 @@ header.header {
   font-size: 18px;
   padding: 10px;
   position: relative;
-  border: 1px solid red;
+  border: 1px solid rgba(196, 97, 97, 0.37);
+  
 
 }
 .navbar div a #menu-text {
   display: inline-block;
-  position: relative;
-  top: 0;
-  left: 0;
   text-align: center;
-  border: 1px solid red;
+  margin-left: 30px;
+  /* border: 1px solid red; */
+  height: auto;
 }
-.navbar div a #nav-link-icon {
-  word-wrap: normal;
-  
-  text-align: center;
-  position: relative;
-  top: auto;
-  border: 1px solid rgb(0, 255, 34);
 
+.navbar div a #nav-link-icon {
+  position: absolute;
+  bottom: auto;
+  top: auto;
+  /* border: 1px solid rgb(0, 255, 34); */
 }
 
 .header button {
