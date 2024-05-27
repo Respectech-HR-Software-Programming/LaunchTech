@@ -1,6 +1,7 @@
 a{
     text-decoration: none;
     color: black;
+    overflow: hidden;
 }
 .nav-link.active{
     background-color: brown !important;
