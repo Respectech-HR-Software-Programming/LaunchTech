@@ -11,7 +11,7 @@
     <title>Sign Up</title>
 </head>
 
-<body>
+<body onclick="toggleMenuFromBody()">
     <!-- THE Header AND NAVBAR -->
     <header class="header">
         <nav class="navbar" id="navLinks" id="navLinks">
@@ -129,27 +129,15 @@
 
                 <!-- Courses List -->
                 <div class="Courses">
-                    <label for="course">Select Course</label>
-                    <div>
-                        <input type="radio" id="cybersecurity" name="course" value="Cybersecurity">
-                        <label for="cybersecurity">Cybersecurity</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="data-analysis" name="course" value="Data Analysis">
-                        <label for="data-analysis">Data Analysis</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="digital-marketing" name="course" value="Digital Marketing">
-                        <label for="digital-marketing">Digital Marketing</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="software-programming" name="course" value="Software Programming">
-                        <label for="software-programming">Software Programming</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="ui-ux" name="course" value="UI/UX">
-                        <label for="ui-ux">UI/UX</label>
-                    </div>
+                    <label id="Courses-heading" for="course">Select Course</label>
+                    <select id="course" name="course">
+                        <option value="disabled">Options</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="Data Analysis">Data Analysis</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Software Programming">Software Programming</option>
+                        <option value="UI/UX">UI/UX</option>
+                    </select>
                 </div>
 
                 <!-- Password Input Field -->
