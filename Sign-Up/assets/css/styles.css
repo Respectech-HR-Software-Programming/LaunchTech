@@ -20,10 +20,10 @@ body {
     max-height: 70%; */
   /* background: url("../images/Campus\ News.jpg"); */
   background: linear-gradient(-45deg, #e73c7e, #23a6d5);
-  background-size: cover;
-  background-position: 100%;
-  background-position-x: center;
-  opacity: 250%;
+  /* background-size: cover; */
+  /* background-position: 100%; */
+  /* background-position-x: center; */
+  /* opacity: 250%; */
   /* overflow-y: scroll; */
   overflow: hidden;
 }
@@ -31,22 +31,88 @@ body {
 body::before {
   content: "";
   position: absolute;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.623);
   pointer-events: none;
-  background-size: cover;
+  /* background-size: cover; */
   z-index: -1;
 }
 
-header {
+/* Header styling */
+header.header {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.navbar {
+  border: 1px solid rgba(82, 77, 77, 0.11);
+  position: absolute;
+  top: 65px;
+  right: 40px;
+  height: auto;
+  padding: 0 5px;
+}
+.navbar div a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: rgb(66, 63, 63);
+  font-size: 18px;
+  padding: 10px;
+  position: relative;
+  border: 1px solid red;
+
+}
+.navbar div a #menu-text {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  border: 1px solid red;
+}
+.navbar div a #nav-link-icon {
+  word-wrap: normal;
+  
+  text-align: center;
+  position: relative;
+  top: auto;
+  border: 1px solid rgb(0, 255, 34);
+
+}
+
+.header button {
+  background-color: rgb(166,67,67);
+  border: none;
+  margin: 5px;
+  padding: 20px 10px;
+}
+.header .menu-icon i {
+  font-size: 15px;
+}
+
+.navbar div a:hover {
+  background-color: #c7b4b476;
+  color: black;
+}
+
+/*  header.header {
+  all: initial;
+
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50px;
+  height: 20px;
   padding: 20px 100px;
   display: flex;
   justify-content: space-between;
@@ -55,9 +121,12 @@ header {
   padding-inline-start: 0px;
   margin-block: 0;
   flex-wrap: wrap;
+  border: 1px solid;
+  
 }
 
-.navigation {
+.navbar {
+  border: 1px solid red;
   color: rgb(12, 11, 11);
   background-color: rgba(175, 12, 12, 0);
   height: 5.5em;
@@ -66,42 +135,34 @@ header {
   z-index: 1001;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 3600px) {
-  html,
-  body {
-    margin: auto;
-  }
-
-  .navigation {
-    margin: auto;
-    height: 5.5em;
-    overflow: hidden;
-    z-index: 1001;
-  }
-
-  .navbar {
-    position: fixed;
-    top: 3;
-    right: 0;
-    width: 100%;
-  }
-
-  .navbar #myLinks {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .navbar a {
-    display: inline-block;
-    margin-left: 1em;
-    font-size: 9px;
-    padding: 10px 2px;
-    overflow-x: hidden;
-    text-decoration: none;
-  }
+.navbar .nav-links {
+  display: none;
+  float: right;
+  overflow: hidden;
 }
 
-.icon {
+.navbar .nav-item {
+  color: rgb(7, 7, 7);
+  padding: 15px 12px;
+  text-decoration: none;
+  font-size: 14px;
+  float: left;
+  top: 3;
+}
+
+
+
+.navbar .nav-item .active::before {
+  content: "";
+  background-color: rgb(4, 4, 4);
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.menu-icon {
   position: fixed;
   top: 3;
   right: 0;
@@ -113,47 +174,30 @@ header {
   overflow: hidden;
 }
 
-.navbar {
-  overflow: hidden;
-  position: relative;
-}
+@media only screen and (min-width: 480px) and (max-width: 3600px) {
+  .navbar {
+    position: fixed;
+    top: 3;
+    right: 0;
+    width: 100%;
+  }
 
-.navbar #myLinks {
-  display: none;
-  float: right;
-  overflow: hidden;
-}
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-.navbar a {
-  color: rgb(7, 7, 7);
-  padding: 15px 12px;
-  text-decoration: none;
-  font-size: 14px;
-  float: left;
-  top: 3;
-}
+  .nav-item {
+    display: inline-block;
+    margin-left: 1em;
+    font-size: 9px;
+    padding: 10px 2px;
+    overflow-x: hidden;
+    text-decoration: none;
+  }
+} */
 
-.navbar a h3 {
-  font-size: large;
-  font-weight: bolder;
-  padding-left: 0.1em;
-  top: 3;
-}
-
-.navbar a:hover {
-  background-color: #dddddd76;
-  color: black;
-}
-
-.navbar a .active::before {
-  content: "";
-  background-color: rgb(4, 4, 4);
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
+/* End of Header styling */
 
 .wrapper {
   position: relative;
@@ -177,11 +221,10 @@ header {
   line-height: 2px;
 }
 .btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .wrapper .active-popup {
   transform: scale(1);
@@ -259,7 +302,6 @@ header {
   background-color: inherit;
   border-radius: 4px;
   border-bottom: 2px solid rgb(160, 37, 37);
-
 }
 
 /* Course Selection Styling */
@@ -275,10 +317,9 @@ header {
   color: inherit;
 }
 .Courses div > label {
-      /* border: 1px solid; */
-      display: inline-block;
-      /* padding: 2px; */
-
+  /* border: 1px solid; */
+  display: inline-block;
+  /* padding: 2px; */
 }
 
 #button {

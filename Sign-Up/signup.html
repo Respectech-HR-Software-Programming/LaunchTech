@@ -13,27 +13,39 @@
 
 <body>
     <!-- THE Header AND NAVBAR -->
-    <header class="navigation">
-        <div class="navbar">
-            <div id="myLinks">
-                <a href="../index.html" class="nav">
-                    <span class="material-icons-sharp md-18">home</span>
-                    Home
-                </a>
-                <a href="../Contact/contact-us.html" class="nav">
-                    <span class="material-icons-sharp">connect_without_contact</span>
-                    Contact Us
-                </a>
-                <a href="../Sign-In/sign-in.html" class="nav">
-                    <span class="material-icons-sharp" onclick="">login</span>
-                    Login
-                </a>
+    <header class="header">
+        <nav class="navbar" id="navLinks" id="navLinks">
+            <div class="nav-links">
+
+                <div>
+                    <a href="../index.html" class="nav-item">
+
+                        <!--  -->
+                        <span id="menu-text"><i id="nav-link-icon" class="material-icons-sharp md-18">home</i></span>
+                        <span id="menu-text">Home</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="../Contact/contact-us.html" class="nav-item">
+                        <!-- <i id="nav-link-icon" class="material-icons-sharp">connect_without_contact</i> -->
+                        <span id="menu-text">Contact Us</span>
+                    </a>
+
+                </div>
+                <div>
+                    <a href="../Sign-In/sign-in.html" class="nav-item">
+                        <!-- <i id="nav-link-icon" class="material-icons-sharp">login</i> -->
+                        <span id="menu-text">Login</span>
+                    </a>
+                </div>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+        </nav>
+
+        <button class="menu-icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </button>
     </header>
+
 
     <!-- LOGIN BODY -->
     <div class="wrapper">
@@ -166,8 +178,8 @@
         </div>
     </div>
     <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
+        function toggleMenu() {
+            var x = document.getElementById("navLinks");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
